@@ -17,7 +17,7 @@ const Card = () => {
   const getNextData = async () => {
     setIsLoading(true);
     key.current = currentActivity.key;
-    const res = await axios("https://jsonplaceholder.typicode.com/posts");
+    const res = await axios("http://www.boredapi.com/api/activity");
     setIsLoading(false);
     setCurrentActivity(res.data);
   };
